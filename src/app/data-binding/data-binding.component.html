@@ -44,4 +44,29 @@
       </div>
     </div>
   </article>
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="onClick()">Me clique!</button>
+      <br><br>
+      <input type="text" 
+        (keyup)="onKeyup(campo.value)"
+        (keyup.enter)="onSave(campo.value)"
+        (blur)="onSave(campo.value)"
+        #campo
+      >
+    </div>
+    <div>
+      <p>Conteúdo atual: {{conteudoAtual}}</p>
+      <p>Conteúdo salvo: {{conteudoSalvo}}</p>
+    </div>
+    <div>
+       <span
+        (mouseover)="onMouseSpan()"
+        (mouseout)="onMouseSpan()"
+        [class.highlight]="isMouseOuver"
+      >
+        Passe o mouse sobre mim!</span>
+    </div>
+  </article>
 </section>
