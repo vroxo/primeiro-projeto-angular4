@@ -1,3 +1,4 @@
+import { InputPropertyComponent } from './data-binding/input-property.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +15,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     AppComponent,
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
-    DataBindingComponent
+    DataBindingComponent,
+    InputPropertyComponent
   ],
   imports: [
     BrowserModule,

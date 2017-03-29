@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
+import { InputPropertyComponent } from './input-property.component';
+
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.css']
+  styleUrls: ['./data-binding.component.css'],
+  entryComponents:[InputPropertyComponent]
 })
 export class DataBindingComponent implements OnInit {
   url: string = 'http://loiane.com';
@@ -13,6 +16,7 @@ export class DataBindingComponent implements OnInit {
   conteudoSalvo: string = '';
   isMouseOuver: boolean = false;
   nome: string = 'abc';
+  nomeCurso: string = "Curso Angular 2"
   
   constructor() { }
 
