@@ -12,6 +12,7 @@ export class DataBindingComponent implements OnInit {
   conteudoAtual: string = '';
   conteudoSalvo: string = '';
   isMouseOuver: boolean = false;
+  nome: string = 'abc';
   
   constructor() { }
 
