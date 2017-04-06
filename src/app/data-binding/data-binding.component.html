@@ -25,6 +25,9 @@
         <option value="alert-danger">Erro</option>
       </select>
       <br><br>
+      <div class="alert {{classe.value}}" role="alert">
+        Texto Colorido!
+      </div>
       <div class="alert" role="alert"
        [class.alert-success]="classe.value == 'alert-success'">Sucesso
       </div> 
@@ -50,14 +53,12 @@
   <article>
     <h3>Event Binding</h3>
     <div>
-      <button (click)="onClick()">Me clique!</button>
+      <button (click)="onClick()" class="btn btn-primary">Me clique!</button>
       <br><br>
-      <input type="text" 
+      <input type="text" #campo
         (keyup)="onKeyup(campo.value)"
         (keyup.enter)="onSave(campo.value)"
-        (blur)="onSave(campo.value)"
-        #campo
-      >
+        (blur)="onSave(campo.value)">
     </div>
     <div>
       <p>Conteúdo atual: {{conteudoAtual}}</p>
@@ -72,21 +73,13 @@
         Passe o mouse sobre mim!</span>
     </div>
   </article>
-  <br>
+ <app-meu-form></app-meu-form>
+  
   <article>
-    <h3>Two way data-binding</h3>
-    <input type="text" [value]="nome" (input)="nome = $event.target.value"/>
-    <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
-    <input type="text" [(ngModel)]="nome">
-    <input type="text" bindon-ngModel="nome">
-    <p>Conteúdo Input: {{ nome }}</p>
-  </article>
-  <br>
-  <article>
+
     <h3>Input/Output properties</h3>
-    <div>
-      <p><curso nome="Python"></curso></p>
-      <p><curso [nome]="nomeCurso"></curso></p>
-    </div>
+    <app-curso nome="Python para Zumbies"></app-curso>
+    <app-curso [nome]="nomeCurso"></app-curso>
+    <contador></contador>
   </article>
 </section>

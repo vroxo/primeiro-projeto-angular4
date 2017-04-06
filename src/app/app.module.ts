@@ -1,4 +1,6 @@
-import { InputPropertyComponent } from './data-binding/input-property.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
+import { MeuFormModule } from './meu-form/meu-form.module';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -9,6 +11,7 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,15 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
     DataBindingComponent,
-    InputPropertyComponent
+    InputPropertyComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    CursosModule
+    CursosModule,
+    MeuFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { InputPropertyComponent } from './input-property.component';
+import { InputPropertyComponent } from './../input-property/input-property.component';
 
 @Component({
   selector: 'app-data-binding',
@@ -15,8 +15,7 @@ export class DataBindingComponent implements OnInit {
   conteudoAtual: string = '';
   conteudoSalvo: string = '';
   isMouseOuver: boolean = false;
-  nome: string = 'abc';
-  nomeCurso: string = "Curso Angular 2"
+  nomeCurso: string = "Curso Angular 2";
   
   constructor() { }
 
