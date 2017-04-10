@@ -16,6 +16,7 @@ export class DataBindingComponent implements OnInit {
   conteudoSalvo: string = '';
   isMouseOuver: boolean = false;
   nomeCurso: string = "Curso Angular 2";
+  valorInicial: number = 10;
   
   constructor() { }
 
@@ -41,6 +42,10 @@ export class DataBindingComponent implements OnInit {
 
   onMouseSpan(){
     this.isMouseOuver = !this.isMouseOuver;
+  }
+
+  onNovoValor(event){
+    console.log(event.novoValor);
   }
 
   ngOnInit() {

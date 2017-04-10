@@ -80,6 +80,7 @@
     <h3>Input/Output properties</h3>
     <app-curso nome="Python para Zumbies"></app-curso>
     <app-curso [nome]="nomeCurso"></app-curso>
-    <contador></contador>
+    <contador [valor]="valorInicial" (novoValor)="onNovoValor($event)"></contador>
+    
   </article>
 </section>
