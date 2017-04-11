@@ -5,7 +5,7 @@ import { InputPropertyComponent } from './../input-property/input-property.compo
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.css'],
+  styleUrls: ['./data-binding.component.scss'],
   entryComponents:[InputPropertyComponent]
 })
 export class DataBindingComponent implements OnInit {

@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef }
 @Component({
   selector: 'contador',
   templateUrl: './output-property.component.html',
-  styleUrls: ['./output-property.component.css']
+  styleUrls: ['./output-property.component.scss']
 })
 export class OutputPropertyComponent implements OnInit {
 
