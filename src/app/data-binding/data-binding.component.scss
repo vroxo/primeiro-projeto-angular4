@@ -1,4 +1,6 @@
+$highlight-color: yellowgreen;
+
 .highlight{
-    background-color: yellowgreen;
+    background-color: $highlight-color;
     font-weight: bold; 
 }
